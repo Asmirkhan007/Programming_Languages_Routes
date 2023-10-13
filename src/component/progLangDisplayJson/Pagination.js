@@ -1,25 +1,55 @@
-// Pagination.js
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
-import "./style.css";
+function Pagination({ totalPages, onPageChange }) {
+  const [currentPage, setCurrentPage] = useState(1);
 
-function Pagination({ currentPage, totalPages, onPageChange }) {
-  const pageNumbers = [];
-  for (let i = 1; i <= totalPages; i++) {
-    pageNumbers.push(i);
-  }
+  const displayButton = () => {
+    const pageNumbers = [];
+    for (let i = 1; i < totalPages; i++) {
+      pageNumbers.push(
+        <button
+          className={i === currentPage ? "active" : ""}
+          onClick={() => {
+            setCurrentPage(i);
+            onPageChange(i);
+          }}
+        >
+          {i}
+        </button>
+      );
+    }
+    return pageNumbers;
+  };
+  const handlePageChange = (newPage) => {
+    if (newPage >= 1 && newPage <= totalPages) {
+      setCurrentPage(newPage);
+      onPageChange(newPage);
+    }
+  };
+   useEffect(() => {
+   onPageChange(currentPage);
+   }, [currentPage]);
+
 
   return (
     <div className="pagination">
-      {pageNumbers.map((page) => (
-        <button
-          key={page}
-          onClick={() => onPageChange(page)}
-          className={currentPage === page ? "active" : ""}
-        >
-          {page}
-        </button>
-      ))}
+      <button
+        onClick={() => handlePageChange(currentPage - 1)}
+        disabled={currentPage === 1}
+      >
+        Previous
+      </button>
+      {/* <span>{displayButton(currentPage, totalPages)}</span> */}
+      {/* <span>
+        Page {currentPage} of {totalPages}
+      </span> */}
+      {displayButton()}
+      <button
+        onClick={() => handlePageChange(currentPage + 1)}
+        disabled={currentPage === totalPages}
+      >
+        Next
+      </button>
     </div>
   );
 }
