@@ -1,0 +1,128 @@
+[
+  {
+    "id": "1",
+    "name": "JavaScript",
+    "description": "A versatile scripting language for the web.",
+    "difficulty": "Moderate"
+  },
+  {
+    "id": "2",
+    "name": "Python",
+    "description": "A high-level, general-purpose language.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "3",
+    "name": "C++",
+    "description": "A powerful, performance-oriented language.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "4",
+    "name": "Java",
+    "description": "A widely-used, platform-independent language.",
+    "difficulty": "Moderate"
+  },
+  {
+    "id": "5",
+    "name": "Ruby",
+    "description": "A dynamic, object-oriented language known for its simplicity.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "6",
+    "name": "C#",
+    "description": "A language developed by Microsoft for Windows development.",
+    "difficulty": "Moderate"
+  },
+  {
+    "id": "7",
+    "name": "Swift",
+    "description": "Apple's language for iOS, macOS, watchOS, and tvOS app development.",
+    "difficulty": "Moderate"
+  },
+  {
+    "id": "8",
+    "name": "Go",
+    "description": "Created by Google, it's known for efficiency and simplicity.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "9",
+    "name": "Rust",
+    "description": "A systems programming language focused on safety and performance.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "10",
+    "name": "TypeScript",
+    "description": "A statically typed superset of JavaScript for building large applications.",
+    "difficulty": "Moderate"
+  },
+  {
+    "id": "11",
+    "name": "Kotlin",
+    "description": "A statically typed language for Android app development and more.",
+    "difficulty": "Moderate"
+  },
+  {
+    "id": "12",
+    "name": "PHP",
+    "description": "A server-side scripting language for web development.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "13",
+    "name": "Perl",
+    "description": "A versatile, general-purpose language often used for scripting.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "14",
+    "name": "Haskell",
+    "description": "A functional programming language known for its strong typing.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "15",
+    "name": "Scala",
+    "description": "A statically typed language for both functional and object-oriented programming.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "16",
+    "name": "Lua",
+    "description": "A lightweight scripting language often embedded in applications.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "17",
+    "name": "Dart",
+    "description": "A language used for building mobile, desktop, and web applications.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "18",
+    "name": "Elixir",
+    "description": "A functional, concurrent language built for reliability and scalability.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "19",
+    "name": "Julia",
+    "description": "A high-performance language for technical computing and data science.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "20",
+    "name": "COBOL",
+    "description": "A language commonly used for business, finance, and administrative systems.",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "21",
+    "name": "R",
+    "description": "A language for statistical analysis and data visualization.",
+    "difficulty": "Easy"
+  }
+]

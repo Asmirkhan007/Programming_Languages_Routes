@@ -1,0 +1,49 @@
+/* CSS */
+/* Add card styles */
+.language-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  margin: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Add these CSS styles to your existing styles.css or create a new stylesheet */
+
+/* Style for the grid container */
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px; /* Adjust the gap between cards as needed */
+}
+
+/* Style for each grid item (language card) */
+.language-grid-item {
+  border: 1px solid #ccc; /* Add a border for each card */
+  padding: 20px; /* Add padding to create spacing around each card */
+}
+
+/* Style to make sure each card takes up the same amount of space */
+.language-grid-item {
+  width: calc(50% - 10px); /* 50% width for 2 columns with gap */
+}
