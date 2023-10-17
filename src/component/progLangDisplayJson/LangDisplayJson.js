@@ -3,6 +3,7 @@ import "./style.css";
 import LanguageDisplay from "./LanguageDisplay";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LanguageDetail from "./LanguageDetail";
+import LanguageIdPage from "./LanguageIdPage";
 
 function LangDisplayJson() {
   return (
@@ -10,7 +11,7 @@ function LangDisplayJson() {
       <Router>
         <Routes>
           <Route path="/" element={<LanguageDisplay />} />
-          <Route path="/language/{id}" element={<LanguageDetail />} />
+          <Route path="/language/:id" element={<LanguageIdPage />} />
         </Routes>
       </Router>
     </div>

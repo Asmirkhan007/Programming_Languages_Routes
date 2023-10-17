@@ -1,14 +1,34 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import languageData from "./languages.json"; // Import the JSON data
+
 
 function LanguageDetail() {
   const { id } = useParams();
   const [languageDetails, setLanguageDetails] = useState(null);
+  // const languageData;
 
+    const getData = () => {
+      fetch("http://localhost:3000/languages.json")
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          console.log(data);
+          const languageData = data;
+          return data;
+          // setLanguages(data); // Set the data in the 'languages' state
+          // setLoading(false); // Update 'loading' to indicate data has been loaded
+        })
+        .catch(function (error) {
+          console.error("Error fetching language data:", error);
+          // setLoading(false);
+        });
+    };
+    const languageData = getData();
   // Fetch language details based on the "id" when the component mounts
   useEffect(() => {
     // Replace the following with logic to find the language based on the ID
+
     const selectedLanguage = languageData.find(
       (language) => language.id === id
     );

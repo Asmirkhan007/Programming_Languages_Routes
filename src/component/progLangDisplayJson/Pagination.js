@@ -11,6 +11,7 @@ function Pagination({ totalPages, onPageChange }) {
           className={i+1 === currentPage ? "active" : ""}
           onClick={() => {
             setCurrentPage(i+1);
+
             onPageChange(i+1);
           }}
         >
@@ -26,9 +27,9 @@ function Pagination({ totalPages, onPageChange }) {
       onPageChange(newPage);
     }
   };
-   useEffect(() => {
-   onPageChange(currentPage);
-   }, [currentPage]);
+  //  useEffect(() => {
+  //  onPageChange(currentPage);
+  //  }, [currentPage]);
 
 
   return (
